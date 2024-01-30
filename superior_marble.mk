@@ -37,3 +37,6 @@ TARGET_INCLUDE_BACKUP_TOOL := true
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_GAPPS_ARCH := arm64
+
+# Via Browser
+USE_ViaBrowser := true
