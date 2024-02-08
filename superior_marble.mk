@@ -40,3 +40,6 @@ TARGET_GAPPS_ARCH := arm64
 
 # Via Browser
 USE_ViaBrowser := true
+
+# Official
+SUPERIOR_OFFICIAL := true
