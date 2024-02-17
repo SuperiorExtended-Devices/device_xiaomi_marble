@@ -8,10 +8,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common SuperiorOS stuff.
+# Inherit some common Superior Extended stuff.
 $(call inherit-product, vendor/superior/config/common.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Inherit from marble device.
 $(call inherit-product, device/xiaomi/marble/device.mk)
@@ -22,5 +20,28 @@ PRODUCT_DEVICE := marble
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_NAME := superior_marble
 
+# Superior Extended
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_MATLOG := false
+TARGET_SUPPORTS_FACE_UNLOCK := true
+USE_MOTO_CALCULATOR := false
+TARGET_SUPPORTS_BLUR := true
+USE_MOTO_CLOCK := false
+SYSTEM_OPTIMIZE_JAVA := true
+SYSTEMUI_OPTIMIZE_JAVA := true
+USE_QUICKPIC := false
+USE_DUCKDUCKGO := false
+TARGET_INCLUDE_BACKUP_TOOL := true
+
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+TARGET_GAPPS_ARCH := arm64
+
+# Gapps
+BUILD_WITH_GAPPS := true
+
+# Via Browser
+USE_ViaBrowser := true
+
+# Official
+SUPERIOR_OFFICIAL := true
