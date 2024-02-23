@@ -167,6 +167,7 @@
         </activity>
         -->
 
+        <!--
         <service
             android:name=".refreshrate.RefreshService"
             android:exported="true"
@@ -198,6 +199,7 @@
                 <action android:name="android.service.quicksettings.action.QS_TILE"/>
             </intent-filter>
         </service>
+        -->
 
         <service
             android:name=".touch.HighTouchPollingService"
